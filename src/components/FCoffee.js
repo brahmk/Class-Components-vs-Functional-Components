@@ -1,14 +1,8 @@
-//functional component
-
-//when the component mounts, I want to fetch my recipes from sampleAPI
-//use componentDidMount built-in lifecycle function
-//use state so that page re-renders once data is retrieved
-
 import React from "react";
 import { useState, useEffect } from "react";
 
 function FCoffee({ firstName }) {
-  const [count, setCount] = useState(0);
+  
   const [coffeeList, setCoffeeList] = useState();
   const [temperature, setTemperature] = useState('hot');
   useEffect(() => {
